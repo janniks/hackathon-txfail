@@ -68,7 +68,7 @@ async function ruleErrorCode(ctx: Context) {
   if (!definition) return;
 
   return {
-    description: `The contract returned an error: ${definition}`,
+    description: `The contract returned an error: \`${definition}\``,
   };
 }
 
