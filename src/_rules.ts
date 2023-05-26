@@ -35,9 +35,9 @@ function rulePostCondition(ctx: Context) {
     const match = fail.match(/Post\-condition check failure on (.*?), txid/);
 
     return {
-      description: `A Post-Condition failed the transaction: ${
+      description: `A Post-Condition failed the transaction: \`${
         match ? match[1] : ""
-      }`,
+      }\``,
     };
   }
 }
